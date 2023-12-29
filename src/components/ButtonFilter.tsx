@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export const FilterButton = styled.button`
+export const ButtonFilter = styled.button`
   padding: 15px;
   border-radius: 12px;
   border-width: 2px;
@@ -11,6 +11,10 @@ export const FilterButton = styled.button`
   font-family: Manrope, sans-serif;
   font-weight: 600;
   font-size: 0.875rem;
+
+  svg {
+    transition: fill 0.15s ease-in;
+  }
 
   &:hover svg {
     fill: #ff000099;

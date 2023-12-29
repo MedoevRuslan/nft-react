@@ -1,7 +1,7 @@
 import React, { FC } from "react";
-import { FlexContainer } from "../../../components/FlexContainer";
+import { ContainerFlex } from "../../components/ContainerFlex";
 import styled from "styled-components";
-import { ImageContainer } from "../../../components/ImageContainer";
+import { ContainerImage } from "../../components/ContainerImage";
 
 type SellerInfoProsType = {
   sellerInfo: {
@@ -18,19 +18,19 @@ export const SellerInfo: FC<SellerInfoProsType> = ({
   imgWidth,
 }) => {
   return (
-    <FlexContainer gap={"14px"}>
-      <ImageContainer width={imgWidth}>
+    <ContainerFlex gap={"14px"}>
+      <ContainerImage width={imgWidth}>
         <SellerImage
           src={sellerInfo.img}
           srcSet={`${sellerInfo?.imgRetina} 2x`}
           alt={`user-image-for-${SellerInfo.name}`}
         />
-      </ImageContainer>
+      </ContainerImage>
       <SellerName>
         <h4>{sellerInfo.name}</h4>
         <span>{sellerInfo.description}</span>
       </SellerName>
-    </FlexContainer>
+    </ContainerFlex>
   );
 };
 

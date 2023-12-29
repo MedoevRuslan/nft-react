@@ -1,22 +1,22 @@
 import React from "react";
 import styled from "styled-components";
-import HeroBG from "../../../../assets/images/Hero-bg.png";
+import HeroBG from "../../../assets/images/Hero-bg.png";
 import { HeroButton } from "./HeroButton";
-import { FlexContainer } from "../../../../components/FlexContainer";
+import { ContainerFlex } from "../../../components/ContainerFlex";
 
 export const Hero = () => {
   return (
     <StyledHero>
       <HeroTitle>Create and Sell NFTs</HeroTitle>
       <HeroSubtitle>World’s Largest NFT Place</HeroSubtitle>
-      <FlexContainer gap={"20px"}>
+      <ContainerFlex gap={"20px"}>
         <HeroButton variant={"primary"} width={"122px"}>
           Explore More
         </HeroButton>
         <HeroButton variant={"secondary"} width={"122px"}>
           Sell Artwork
         </HeroButton>
-      </FlexContainer>
+      </ContainerFlex>
     </StyledHero>
   );
 };

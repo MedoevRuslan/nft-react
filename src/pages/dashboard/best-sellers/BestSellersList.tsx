@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { SellerInfo } from "../SellerInfo";
-import AlexCaImg from "../../../../assets/images/products/image-1.png";
-import AlexCaRetina from "../../../../assets/images/products/image-1@2.png";
+import AlexCaImg from "../../../assets/images/products/image-1.png";
+import AlexCaRetina from "../../../assets/images/products/image-1@2.png";
 import { BestSeller } from "./BestSeller";
 
 export const BestSellersList = () => {
